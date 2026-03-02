@@ -1,12 +1,3 @@
-# 📝 Notas Previas a la Publicación (Revisión de Arquitectura)
-
-El proyecto está muy bien estructurado y es un excelente ejercicio de administración de sistemas. Sin embargo, antes de publicarlo como una "puesta en producción", hay dos detalles críticos que debemos ajustar para mantener el rigor técnico:
-
-1. **Escalabilidad del "Spoofing" local:** Llamar a esto un entorno de producción es un salto arriesgado. Depender de la edición manual del archivo `/etc/hosts` es funcional para un laboratorio o *Proof of Concept* (PoC), pero no escala. Un ingeniero de sistemas notaría que cualquier cambio de IP romperá la red, y mantener esto en decenas de clientes es inviable. Lo he enmarcado claramente como un **entorno de pruebas/laboratorio**. Para producción, necesitaríamos un servicio DNS ligero como `dnsmasq`.
-2. **Contradicción en la seguridad:** Mencionas la "negociación de túneles seguros", pero luego en Pidgin habilitas *Permitir autenticación en claro sobre canales no cifrados*. Esto es una vulnerabilidad severa frente a ataques *Man-in-the-Middle*. Para un despliegue riguroso, lo ideal sería generar al menos certificados autofirmados con OpenSSL. He añadido una nota de advertencia en el README para justificar por qué se hizo así en este laboratorio.
-
----
-
 # 🌐 Servidor de Mensajería Privada con XMPP (Ejabberd)
 
 ¡Bienvenido a este proyecto! Aquí documento cómo crear tu propio servidor de mensajería instantánea (como tu propio "WhatsApp" o "Telegram" privado y corporativo) utilizando el protocolo XMPP. 
