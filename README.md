@@ -51,9 +51,11 @@ El cerebro de nuestro servidor se configura en un archivo llamado `ejabberd.yml`
 
 **1. Declaración de nuestro dominio:**
 Le decimos al servidor cómo se llama nuestra red.
+
 ```yaml
 hosts:
   - "mosfraayo.local"
+```
 
 **2. Permisos de Administrador:**
 Definimos quién es el jefe del servidor.
@@ -63,6 +65,7 @@ acl:
   admin:
     user:
       - "admin@mosfraayo.local"
+```
 
 **3. Red de Confianza:**
 Configuramos las reglas de acceso para permitir que los equipos de nuestra red local puedan comunicarse sin bloqueos.
@@ -76,10 +79,10 @@ access_rules:
 ```
 
 **Evidencias de la configuración del servidor:**
-<img width="200" height="53" alt="image" src="https://github.com/user-attachments/assets/79e9e2a2-c768-492c-84e2-fed8a6bda194" />
-<img width="328" height="120" alt="image" src="https://github.com/user-attachments/assets/e0461226-b4c0-489b-85a5-03cfe361fee5" />
-<img width="158" height="70" alt="image" src="https://github.com/user-attachments/assets/ef090dea-e082-4561-82c4-7d3557f8023a" />
-<img width="179" height="46" alt="image" src="https://github.com/user-attachments/assets/8ba47168-dce5-45f3-aa2b-6a98e08e5f31" />
+<img width="200" height="53" alt="image" src="https://github.com/user-attachments/assets/5e1aebf9-0ee1-4e75-83e9-a15f74f5edfe" />
+<img width="328" height="120" alt="image" src="https://github.com/user-attachments/assets/4f76cd7b-8919-4e61-81b8-b012fb685e51" />
+<img width="158" height="70" alt="image" src="https://github.com/user-attachments/assets/27db8baa-78fe-4018-b4e8-664476c0073c" />
+<img width="179" height="46" alt="image" src="https://github.com/user-attachments/assets/517dac95-1b72-4fcc-b211-a22057b98eca" />
 
 
 ## 💻 Configuración de Clientes (Pidgin)
@@ -94,14 +97,16 @@ Para que los usuarios puedan chatear, configuramos el programa Pidgin. Como esta
 * **Autenticación:** Permitir autenticación en claro. (⚠️ Nota de seguridad: Esto se habilita exclusivamente para este entorno de laboratorio para evitar que el cliente rechace la conexión por falta de certificados firmados por una CA.)
 
 **Evidencias de la configuración del cliente:**
-<img width="575" height="471" alt="image" src="https://github.com/user-attachments/assets/eadb47eb-486f-41f5-adfb-3336b1500f39" />
-<img width="378" height="556" alt="image" src="https://github.com/user-attachments/assets/e627c9d6-797e-4a57-8ff3-9b835cd120fe" />
-<img width="544" height="613" alt="image" src="https://github.com/user-attachments/assets/3feaa15a-b296-4718-a356-95f4b681ed21" />
-<img width="406" height="309" alt="image" src="https://github.com/user-attachments/assets/67bbccde-ebcb-4f00-b632-83d9268014dd" />
+<img width="575" height="471" alt="image" src="https://github.com/user-attachments/assets/5c93a662-9fd4-4a85-9653-436b8935ff34" />
+<img width="589" height="624" alt="image" src="https://github.com/user-attachments/assets/b2317c90-2499-48ea-a439-81e4b0bf75fc" />
+<img width="797" height="585" alt="image" src="https://github.com/user-attachments/assets/eda7db3c-f122-4056-9846-e278ff52aa7b" />
+<img width="406" height="309" alt="image" src="https://github.com/user-attachments/assets/75fdc9f6-122b-4a70-a0f0-cb304944938c" />
+
 
 ## ✉️ Comprobación de Funcionamiento
 ¡La prueba final! Aquí podemos ver cómo dos usuarios conectados a nuestra red privada logran enviarse mensajes instantáneos de forma exitosa.
 
-<img width="504" height="588" alt="image" src="https://github.com/user-attachments/assets/b88fe355-5b43-49ad-8077-d16686562bfc" />
-<img width="452" height="431" alt="image" src="https://github.com/user-attachments/assets/0b8b80bc-8d17-4bc7-ae49-2753d9368dce" />
+<img width="439" height="512" alt="image" src="https://github.com/user-attachments/assets/ac67b97b-7bd8-41cc-a91f-415e5e003be8" />
+<img width="452" height="431" alt="image" src="https://github.com/user-attachments/assets/5c411b88-4e1b-4cc4-9e96-e47dddeeab90" />
+
 
